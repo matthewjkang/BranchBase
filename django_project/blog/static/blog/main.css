@@ -1,5 +1,5 @@
 body {
-    background: #fafafa;
+    background: #dbdbdb;
     color: #333333;
     margin-top: 5rem;
   }
@@ -36,7 +36,7 @@ body {
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   .article-title {
@@ -84,4 +84,8 @@ body {
   
   .account-heading {
     font-size: 2.5rem;
+  }
+
+  .rounded{
+    border-radius: 1rem!important;
   }

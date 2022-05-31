@@ -12,3 +12,9 @@
 ### If you are on an m1 mac ...
 
 For some reason the PIL python library does not want to work on m1 macs. If you are running this in your terminal, make sure that you are running it in Rosetta mode. 
+
+### Lessons that I've learned
+
+1. Deploying an application for production requires a lot more work than I would have expected.
+    * Handling thing's like secret keys and AWS keys requires reading more documentation about how to safely store them.
+2. An exposed secret key gives hackers the opportunity to turn YOUR system into THEIR system. 

@@ -4,10 +4,14 @@
 
 1. fork the repo
 2. enter into the project directory through the terminal
-3. 'source venv/bin/activate'
-    * This starts the virtual environment 
+3. Create, equip, and start your python virtual environment
+    * 'python3 -m venv venv'
+    * 'pip install -r django_project/requirements.txt'
+    * 'source venv/bin/activate'
+    * your virtual env should not be inside of the django_project directory btw
 4. 'cd django_project'
 5. 'python3 manage.py runserver'
+    *If something goes wrong, try running 'python3 manage.py migrate', then 'python3 manage.py makemigrations'
 
 ### If you are on an m1 mac ...
 

@@ -13,4 +13,16 @@
             </div>
         </article>
     {% endfor %}
+    </div>
+    <div class="col-md-3">
+        <div class="content-section border border-primary">
+            <h3>Welcome to BranchBase</h3>
+            <div class="d-flex justify-content-center">Here's a list of all our users</div>
+            <ul class="list-group mt-2 mb-3">
+                {% for user in ListUsers %}
+                <li class="list-group-item list-group-item-light">{{user.username}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+      </div> 
 {%endblock content%}

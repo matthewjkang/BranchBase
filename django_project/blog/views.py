@@ -1,6 +1,6 @@
-from audioop import reverse
 from django.shortcuts import render
 from django.urls import reverse_lazy
+from django.contrib.auth.models import User
 from .models import Post
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
 from django.views.generic import (
@@ -21,7 +21,7 @@ class PostListView(ListView):
     template_name = 'blog/home.html' #<app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']
-
+    extra_context = {'ListUsers':User.objects.values()}
 class PostDetailView(DetailView):
     model = Post
 

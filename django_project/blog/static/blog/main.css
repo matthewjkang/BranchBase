@@ -1,7 +1,7 @@
 body {
     background: #dbdbdb;
     color: #333333;
-    margin-top: 5rem;
+    margin-top: 3.5rem;
   }
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
@@ -88,4 +88,9 @@ body {
 
   .rounded{
     border-radius: 1rem!important;
+  }
+
+  .list-group-item{
+    padding: 0.25rem 0.45rem;
+    border: 1px solid rgb(2, 117, 216)
   }

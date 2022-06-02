@@ -1,6 +1,6 @@
 {%extends 'blog/base.html'%}
 {%block content%}
-<h5 class='text-muted mb-0 ml-2'>Feed</h5>
+<h5 class='text-muted mb-1 ml-2'>Posts by {{view.kwargs.username}} ({{page_obj.paginator.count }})</h5>
     {% for post in posts %}
         <article class="media content-section border border-primary rounded">
             <img class = "rounded-circle article-img" src="{{post.author.profile.image.url}}" alt="">
@@ -21,7 +21,7 @@
             <div class="d-flex justify-content-center text-muted small">Here's a list of all our users</div>
             <ul class="list-group mt-2 mb-3">
                 {% for user in ListUsers %}
-                <li class="list-group-item list-group-item small"><a href="user/{{user.username}}">{{user.username}}</a></li>
+                <li class="list-group-item list-group-item small"><a href="{{user.username}}">{{user.username}}</a></li>
                 {% endfor %}
             </ul>
         </div>

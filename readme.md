@@ -1,4 +1,4 @@
-#UPDATE : Its up and live at blog.mattkang.com
+# UPDATE : Its up and live at blog.mattkang.com
 
 
 ## A blog web application that I wrote in Django.  

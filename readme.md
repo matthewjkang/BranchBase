@@ -1,3 +1,6 @@
+#UPDATE : Its up and live at blog.mattkang.com
+
+
 ## A blog web application that I wrote in Django.  
 
 ### How to use it : 
